@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+    function mobileEvent (eventPath) {
+        console.log('dfm://' + eventPath);
+        document.location = 'dfm://' + eventPath;
+    };
+</script>
+
+<button onClick="mobileEvent('create')" type="button">create</button>
+<button onClick="mobileEvent('accept')" type="button">accept</button>
+<button onClick="mobileEvent('reject')" type="button">reject</button>
+<button onClick="mobileEvent('cancel-challenge')" type="button">cancel-challenge</button>
+<button onClick="mobileEvent('cancel')" type="button">cancel</button>
+
+</body>
+</html>
